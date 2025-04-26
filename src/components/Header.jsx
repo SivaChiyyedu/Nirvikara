@@ -18,13 +18,7 @@ export default function Header() {
           </div>
           <div className="org-name">
             <div>
-              <h2>TWO</h2>
-            </div>
-            <div>
-              <h2>BROTHERS</h2>
-            </div>
-            <div>
-              <h5>ORGANIC FARMS</h5>
+              <h2>NIRVIKARA</h2>
             </div>
           </div>
           <div className="header-wrapper">
