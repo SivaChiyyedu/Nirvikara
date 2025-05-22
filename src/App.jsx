@@ -1,32 +1,22 @@
 // import { useState } from "react";
-import Products from "./components/products.jsx";
+
 import "./App.css";
-import Header from "./components/Header.jsx";
-import Filters from "./components/Filters.jsx";
-import Sort from "./components/Sort.jsx";
+
+
+import HomePage from "./pages/HomePage.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/', element: <HomePage />
+    }
+  ])
   return (
-    <div className="main-div">
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
-      <header>
-        <div>
-          <Header />
-        </div>
-      </header>
-      <main>
-        <header>
-          <div className="main-header-div">
-            <Filters />
-            <Sort />
-          </div>
-        </header>
-        <Products />
-      </main>
-    </div>
+   <>
+   <RouterProvider router={router}></RouterProvider>
+   </>
   );
 }
 
