@@ -1,9 +1,9 @@
 // import { useState } from "react";
-import Products from "./components/products.jsx";
-import "./App.css";
-import Header from "./components/Header.jsx";
-import Filters from "./components/Filters.jsx";
-import Sort from "./components/Sort.jsx";
+import Products from '../components/products.jsx'
+import "../app.css"
+import Header from "../components/Header.jsx";
+import Filters from "../components/Filters.jsx";
+import Sort from "../components/Sort.jsx";
 
 function HomePage() {
   return (
