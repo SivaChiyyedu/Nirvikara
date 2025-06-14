@@ -1,43 +1,64 @@
 // import { useState } from "react";
-
-
-import Atta from "./pages/Atta.jsx";
-import Ghee from "./pages/Ghee.jsx";
-
-
-import HomePage from "./pages/HomePage.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import NewLaunch from "./pages/NewLaunch.jsx";
-import Oil from "./pages/oil.jsx";
-import Sweetners from "./pages/Sweetners.jsx";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import "./App.css";
+import Root from "./pages/Root.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Service from "./pages/Service.jsx";
+import Gallery from "./pages/Gallery.jsx";
+import Blog from "./pages/Blog.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
-
   const router = createBrowserRouter([
     {
-      path: '/', element: <HomePage />,
-    },
+      path: '/',
+      element: <Root />,
+      children: [
+    
     {
-      path: '/Atta', element: <Atta />,
+      path: '/',
+      element: <Home />
     },
+
     {
-      path: '/Ghee', element: <Ghee />,
+      path: '/home',
+      element: <Home />
     },
+
     {
-      path: '/NewLaunch', element: <NewLaunch />,
+      path: '/about',
+      element: <About/>
     },
+
     {
-      path: '/Oil', element: <Oil />,
+      path: '/service',
+      element: <Service/>
     },
+
     {
-      path: '/Sweetners', element: <Sweetners />,
+      path: '/contact',
+      element: <Contact/>
+    },
+
+    {
+      path: '/gallery',
+      element: <Gallery/>
+    },
+
+    {
+      path: '/blog',
+      element: <Blog/>
+    }
+  ]
     }
   ])
   return (
-   <>
-   <RouterProvider router={router}></RouterProvider>
-   </>
-  );
+  
+  <RouterProvider router={router} />
+  )
+  
+  
 }
 
 export default App;
