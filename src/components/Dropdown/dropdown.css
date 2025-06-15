@@ -1,0 +1,9 @@
+.dropdown {
+  margin: 20px;
+}
+#dropdown-select {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  color: royalblue;
+}
