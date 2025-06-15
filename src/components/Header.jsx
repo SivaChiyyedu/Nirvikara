@@ -4,6 +4,7 @@
 // import memberIcon from "../assets/user.png";
 // import jaggery from "../assets/Jaggery.png";
 import productsImage from "../assets/productsImage.png";
+import SearchBar from "./SearchBar/SearchBar";
 import { Link } from "react-router-dom";
 import {
   FaSearch,
@@ -14,6 +15,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaPinterestP,
+  FaBars
 } from "react-icons/fa";
 
 export default function Header() {
@@ -80,6 +82,12 @@ export default function Header() {
             <span className="navigation-item">
               <Link to="/">Nirvikara</Link>
             </span>
+             <span className="navigation-item">
+             
+              <FaBars/>
+            </span>
+            <SearchBar />
+
           </div>
           <div className="navigation-wrapper">
             <ul className="navigation-list">
