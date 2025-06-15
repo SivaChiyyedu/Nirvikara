@@ -1,33 +1,64 @@
 // import { useState } from "react";
-import Products from "./components/products.jsx";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header.jsx";
-import Filters from "./components/Filters.jsx";
-import Sort from "./components/Sort.jsx";
+import Root from "./pages/Root.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Service from "./pages/Service.jsx";
+import Gallery from "./pages/Gallery.jsx";
+import Blog from "./pages/Blog.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      children: [
+    
+    {
+      path: '/',
+      element: <Home />
+    },
+
+    {
+      path: '/home',
+      element: <Home />
+    },
+
+    {
+      path: '/about',
+      element: <About/>
+    },
+
+    {
+      path: '/service',
+      element: <Service/>
+    },
+
+    {
+      path: '/contact',
+      element: <Contact/>
+    },
+
+    {
+      path: '/gallery',
+      element: <Gallery/>
+    },
+
+    {
+      path: '/blog',
+      element: <Blog/>
+    }
+  ]
+    }
+  ])
   return (
-    <div className="main-div">
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
-      <header>
-        <div>
-          <Header />
-        </div>
-      </header>
-      <main>
-        <header>
-          <div className="main-header-div">
-            <Filters />
-            <Sort />
-          </div>
-        </header>
-        <Products />
-      </main>
-    </div>
-  );
+  
+  <RouterProvider router={router} />
+  )
+  
+  
 }
 
 export default App;
