@@ -5,6 +5,8 @@
 // import jaggery from "../assets/Jaggery.png";
 import productsImage from "../assets/productsImage.png";
 import SearchBar from "./SearchBar/SearchBar";
+import Agrofarm from "../assets/Agrofarm.png";
+import Dropdown from "./Dropdown/Dropdown.jsx";
 import { Link } from "react-router-dom";
 import {
   FaSearch,
@@ -74,20 +76,27 @@ export default function Header() {
         </div>
         <div className="navigation-bar">
           <div className="logo-wrapper">
-            <img
-              className="logo"
-              src="https://www.gheewala.com/wp-content/uploads/2020/08/logo.png"
-              alt="logo"
-            />
-            <span className="navigation-item">
-              <Link to="/">Nirvikara</Link>
-            </span>
-             <span className="navigation-item">
-             
-              <FaBars/>
-            </span>
+            <div className="logo-div">
+              <img
+                className="logo"
+                src="https://www.gheewala.com/wp-content/uploads/2020/08/logo.png"
+                alt="logo"
+              />
+            </div>
+            <div className="navigation-item-wrapper">
+              <span className="navigation-item">
+                <Link to="/">Nirvikara</Link>
+              </span>
+            </div>
+            <div className="navigation-item-wrapper">
+              <span className="menu-icon">
+                <Link to="/menu">
+                  <FaBars />
+                </Link>
+              </span>
+            </div>
+            <Dropdown />
             <SearchBar />
-
           </div>
           <div className="navigation-wrapper">
             <ul className="navigation-list">
@@ -120,11 +129,7 @@ export default function Header() {
         </div>
       </div>
       <div>
-        <img
-          className="header-body-div"
-          src={productsImage}
-          alt="productsimage"
-        ></img>
+        <img className="header-body-div" src={Agrofarm} alt="Agrofarm"></img>
       </div>
     </>
   );
