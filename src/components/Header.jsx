@@ -3,6 +3,8 @@
 // import wishlistIcon from "../assets/love.png";
 // import memberIcon from "../assets/user.png";
 // import jaggery from "../assets/Jaggery.png";
+import productsImage from "../assets/productsImage.png";
+import SearchBar from "./SearchBar/SearchBar";
 import Agrofarm from "../assets/Agrofarm.png";
 import Dropdown from "./Dropdown/Dropdown.jsx";
 import { Link } from "react-router-dom";
@@ -15,7 +17,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaPinterestP,
-  FaBars,
+  FaBars
 } from "react-icons/fa";
 
 export default function Header() {
@@ -94,6 +96,7 @@ export default function Header() {
               </span>
             </div>
             <Dropdown />
+            <SearchBar />
           </div>
           <div className="navigation-wrapper">
             <ul className="navigation-list">
