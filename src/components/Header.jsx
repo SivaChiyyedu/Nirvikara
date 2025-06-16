@@ -3,7 +3,6 @@
 // import wishlistIcon from "../assets/love.png";
 // import memberIcon from "../assets/user.png";
 // import jaggery from "../assets/Jaggery.png";
-import productsImage from "../assets/productsImage.png";
 import SearchBar from "./SearchBar/SearchBar";
 import Agrofarm from "../assets/Agrofarm.png";
 import Dropdown from "./Dropdown/Dropdown.jsx";
@@ -19,6 +18,7 @@ import {
   FaPinterestP,
   FaBars
 } from "react-icons/fa";
+import Categories from "./Categories/Categories.jsx";
 
 export default function Header() {
   return (
@@ -95,6 +95,7 @@ export default function Header() {
                 </Link>
               </span>
             </div>
+            <FaBars />
             <Dropdown />
             <SearchBar />
           </div>
@@ -131,6 +132,7 @@ export default function Header() {
       <div>
         <img className="header-body-div" src={Agrofarm} alt="Agrofarm"></img>
       </div>
+      <Categories/>
     </>
   );
 }
