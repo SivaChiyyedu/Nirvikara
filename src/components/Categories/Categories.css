@@ -1,6 +1,55 @@
+/* .categories-wrapper {
+    display: inline;
+   
+    
+} */
+
+.category-heading-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.category-view{
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+.category-heading-div h2 {
+    position: absolute;
+    left: 100px;
+    
+}
+
+.category-view h4 {
+    margin: 9px;
+    padding: 7px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+    
+}
+
+.category-view > h4:first-child:hover{
+    background-color: orange;
+    cursor: pointer;
+  
+}
+
+
+
+
 .categories-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-evenly;
+    align-items: baseline;
+   
+
 }
+
