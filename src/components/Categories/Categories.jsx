@@ -2,7 +2,9 @@ import vegetables from '../../assets/vegetables.jpg';
 import fruits from '../../assets/Fruits.jpg';
 import nuts from '../../assets/Nuts.jpg';
 import './Categories.css'
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight  } from "react-icons/md";
 
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 
 function Categories() {
@@ -16,8 +18,10 @@ function Categories() {
            </div>
                 <div className='category-view'>
                     <h4>View All</h4>
-                    <h4>L</h4>
-                    <h4>G</h4>
+                  
+                   
+                    <button> <MdKeyboardArrowLeft className="arrow-icon"/></button>
+                    <button><MdKeyboardArrowRight style={{ fontSize: '30px' }} /></button>
                 </div>
             </div>
           
