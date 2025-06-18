@@ -40,7 +40,7 @@ function Categories() {
                 </div>
                 <div className="category">
                     <img src={nuts} alt="category-nuts" />
-                    <h5>Nuts</h5>
+                    <h5>Nuts and fruits</h5>
                     
                 </div>
             </div>
