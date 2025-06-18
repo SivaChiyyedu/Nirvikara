@@ -21,7 +21,7 @@ function Categories() {
                   
                    
                     <button> <MdKeyboardArrowLeft className="arrow-icon"/></button>
-                    <button><MdKeyboardArrowRight style={{ fontSize: '30px' }} /></button>
+                    <button><MdKeyboardArrowRight className="arrow-icon"/></button>
                 </div>
             </div>
           
