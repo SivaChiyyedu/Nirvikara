@@ -1,4 +1,5 @@
 import "../App.css";
+import Categories from "../components/Categories/Categories.jsx";
 import Filters from "../components/Filters.jsx";
 import Products from "../components/Products.jsx";
 import Sort from "../components/Sort.jsx";
@@ -11,6 +12,7 @@ function Home() {
         content="width=device-width, initial-scale=1.0"
       ></meta>
       <main>
+        <Categories/>
         <div className="main-header-div">
           <Filters />
           <Sort />

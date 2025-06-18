@@ -132,7 +132,7 @@ export default function Header() {
       <div>
         <img className="header-body-div" src={Agrofarm} alt="Agrofarm"></img>
       </div>
-      <Categories/>
+      {/* <Categories/> */}
     </>
   );
 }
