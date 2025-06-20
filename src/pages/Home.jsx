@@ -3,6 +3,7 @@ import Categories from "../components/Categories/Categories.jsx";
 import Filters from "../components/Filters.jsx";
 import Products from "../components/Products.jsx";
 import Sort from "../components/Sort.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         </div>
         <Products />
       </main>
+      <Footer/>
     </div>
   );
 }
