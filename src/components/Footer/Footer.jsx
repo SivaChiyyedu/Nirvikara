@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
         <div className="footer-grid-container-item__2 items">
           <h4>Nirvikara</h4>
-          <ul>
+          <ul className="footer-list">
             <li>About us</li>
             <li>Conditions</li>
             <li>Our Journals</li>
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="footer-grid-container-item__3 items">
           <h4>Quick Links</h4>
-          <ul>
+          <ul className="footer-list">
             <li>Offers</li>
             <li>Discount Coupons</li>
             <li>Stores</li>
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
         <div className="footer-grid-container-item__4 items">
           <h4>Customer Service</h4>
-          <ul>
+          <ul className="footer-list">
             <li>FAQ</li>
             <li>Contact</li>
             <li>Privacy Policy</li>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
         <div className="footer-grid-container-item__5 item items">
           <h4>Subscribe Us</h4>
-          <ul>
+          <ul className="footer-list">
             <li>
               Subscribe to our newletter to get updates about our grand Offers
             </li>
